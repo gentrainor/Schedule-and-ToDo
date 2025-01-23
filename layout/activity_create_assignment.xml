@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Assignment Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/assignmentNameTextView"
+        android:text="Assignment Name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#0A3056"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/assignmentNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assignmentNameTextView"
+        android:layout_margin="16dp"
+        android:hint="Enter Assignment Name" />
+
+    <!-- Due Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dueDateTextView"
+        android:text="Due Date (MM/DD/YYYY)"
+        android:textColor="#0A3056"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/assignmentNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/dueDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dueDateTextView"
+        android:layout_margin="16dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:hint="Enter Due Date" />
+
+    <!-- Course Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseSectionTextView"
+        android:text="Course Section"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#0A3056"
+        android:layout_below="@+id/dueDateEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/courseSectionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseSectionTextView"
+        android:layout_margin="16dp"
+        android:hint="Enter Course Section" />
+
+
+    <!-- Create Button -->
+    <Button
+        android:id="@+id/createAssignmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseSectionEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Create Assignment"
+        android:textColor="#0A3056"
+        android:background="@drawable/todo_list_buttons"
+        app:backgroundTint="@null"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>

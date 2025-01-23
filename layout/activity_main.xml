@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scheduleTitle"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Schedule"
+        android:textSize="35sp"
+        android:background="#FFFFFF"
+        android:textColor="#515FAB"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/buttonsContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scheduleTitle" />
+
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/addButton"
+            android:background="@drawable/rounded_button_background"
+            app:backgroundTint="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="23dp"
+            android:textColor="@color/white"
+            android:text="Add a Class"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/toDoListPageButton"
+            android:background="@drawable/rounded_button_background"
+            app:backgroundTint="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="To-Do List"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

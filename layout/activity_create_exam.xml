@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Exam Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/examNameTextView"
+        android:text="Exam Name"
+        android:textColor="#0A3056"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/examNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/examNameTextView"
+        android:layout_margin="16dp"
+        android:hint="Enter Exam Name" />
+
+    <!-- Exam Date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/examDateTextView"
+        android:text="Exam Date (MM/DD/YYYY)"
+        android:textColor="#0A3056"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/examNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/examDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/examDateTextView"
+        android:layout_margin="16dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:hint="Enter Exam Date (MM/DD/YYYY)" />
+
+    <!-- Course Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/examCourseSectionTextView"
+        android:text="Course Section"
+        android:textColor="#0A3056"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/examDateEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/examCourseSectionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/examCourseSectionTextView"
+        android:layout_margin="16dp"
+        android:hint="Enter Course Section" />
+
+    <!-- Create Button -->
+    <Button
+        android:id="@+id/createExamButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/examCourseSectionEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Create Exam"
+        android:textColor="#0A3056"
+        android:background="@drawable/todo_list_buttons"
+        app:backgroundTint="@null"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
+

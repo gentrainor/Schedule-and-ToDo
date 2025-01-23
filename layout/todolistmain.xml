@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- activity_todo_list.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/todoTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:textSize="30dp"
+        android:textColor="#0A3056"
+        android:text="To Do"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+
+    <!-- RecyclerView to display tasks -->
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="333dp"
+        android:background="@drawable/backarrow"
+        app:backgroundTint="@null" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="658dp"
+        android:layout_below="@id/backButton"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF" />
+
+
+    <!-- Buttons arranged at the bottom -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+
+        <Button
+            android:id="@+id/addAssignmentButton"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/todo_list_buttons"
+            android:text="Add Assignment"
+            android:textSize="15sp"
+            android:textColor="#0A3056"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/examButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_default="wrap" />
+
+
+        <Button
+            android:id="@+id/addExamButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Exam"
+            android:textColor="#0A3056"
+            android:background="@drawable/todo_list_buttons"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/examButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_default="wrap" />
+
+
+        <Button
+            android:id="@+id/addToDoButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/todo_list_buttons"
+            android:text="Add To-Do"
+            android:textColor="#0A3056"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/examButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_default="wrap" />
+
+
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="73dp"
+            android:layout_height="56dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/ic_filter"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="40dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

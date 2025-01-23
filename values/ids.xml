@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="createAssignmentButton" type="id" />
+    <item name="courseSectionEditText" type="id" />
+    <item name="dueDateEditText" type="id" />
+    <item name="assignmentNameEditText" type="id" />
+    <item name="assignmentNameTextView" type="id" />
+    <item name="examCourseSectionEditText" type="id" />
+    <item name="createExamButton" type="id" />
+    <item name="examCourseSectionTextView" type="id" />
+    <item name="examDateEditText" type="id" />
+    <item name="examDateTextView" type="id" />
+    <item name="examNameEditText" type="id" />
+    <item name="examNameTextView" type="id" />
+    <item name="taskCourseSectionEditText" type="id" />
+    <item name="createTaskButton" type="id" />
+    <item name="taskCourseSectionTextView" type="id" />
+    <item name="taskNameEditText" type="id" />
+</resources>
